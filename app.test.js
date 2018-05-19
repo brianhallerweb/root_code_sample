@@ -1,4 +1,4 @@
-const importedIndex = require("./index");
+const importedIndex = require("./app");
 const commands = importedIndex.commands;
 const drivers = importedIndex.drivers;
 const Driver = importedIndex.Driver;

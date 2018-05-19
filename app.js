@@ -86,10 +86,10 @@ class Driver {
   }
 }
 
-//I am not sure how to test this function adequately
 const run = () => {
+  let inputFilePath;
   if (process.argv.length === 3) {
-    var inputFilePath = process.argv.pop();
+    inputFilePath = process.argv.pop();
   } else {
     console.log("An input file is required");
     return;

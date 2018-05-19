@@ -31,7 +31,7 @@ Bob: 0 miles
 
 Start the app with:
 
-`$ node index.js ./inputFile.txt`
+`$ node app.js ./inputFile.txt`
 
 Tests are written in Jest:
 
