@@ -6,7 +6,7 @@ The first command is Driver, which registers a new Driver in the app. Example:
 
 `Driver Dan`
 
-The second command is Trip, which will record a trip attributed to a driver. The line must be space delimited with the following fields: the command (Trip), driver name, start time, stop time, miles driven. Times require the format of hours:minutes, using a 24-hour clock and following the assumption that drivers never drive past midnight (the start time will always be before the end time). Example:
+The second command is Trip, which will record a trip attributed to a driver. The line must be space delimited with the following fields: the command (Trip), driver name, start time, stop time, miles driven. Times require the format of hours:minutes,using a 24-hour clock and following the assumption that drivers never drive past midnight (the start time will always be before the end time). Example:
 
 `Trip Dan 07:15 07:45 17.3`
 
@@ -36,3 +36,5 @@ Start the app with:
 Tests are written in Jest:
 
 `$ npm test`
+
+![Alt text](/app_diagram.jpg "App Diagram")
