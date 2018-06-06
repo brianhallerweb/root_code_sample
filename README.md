@@ -35,7 +35,7 @@ Start the app with:
 
 Tests are written in Jest:
 
-## `$ npm test`
+`$ npm test`
 
 ---
 
