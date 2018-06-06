@@ -39,6 +39,6 @@ Tests are written in Jest:
 
 ---
 
-## App Diagram
+#### App Diagram
 
 ![Alt text](/app_diagram.jpg)
