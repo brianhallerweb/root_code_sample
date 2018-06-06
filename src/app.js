@@ -28,7 +28,7 @@ function run() {
 
   fs.readFile(inputFilePath, "utf8", (err, data) => {
     if (err) {
-      console.log("Something went wrong reading your input file");
+      console.log("Error: ", err);
       return;
     }
     parseInputFile(data);
