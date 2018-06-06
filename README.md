@@ -1,4 +1,4 @@
-#### Root Code Sample - driving history app
+## Root Code Sample - driving history app
 
 This app processes an input text file. Each line in the input file starts with a command. There are two possible commands.
 
@@ -35,8 +35,10 @@ Start the app with:
 
 Tests are written in Jest:
 
-`$ npm test`
+## `$ npm test`
 
-App Diagram
+---
+
+##App Diagram
 
 ![Alt text](/app_diagram.jpg)
