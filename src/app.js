@@ -20,7 +20,9 @@ function run() {
   if (process.argv.length === 3) {
     inputFilePath = process.argv.pop();
   } else {
-    console.log("An input file is required");
+    console.log(
+      "App must be started with a command in this format: $ node src/app.js ./inputFile.txt"
+    );
     return;
   }
 
