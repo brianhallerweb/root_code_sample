@@ -31,7 +31,7 @@ Dan: 39 miles @ 47 mph
 Bob: 0 miles
 ```
 
-Start the app with:
+Run the app with:
 
 `$ node src/app.js ./inputFile.txt`
 
