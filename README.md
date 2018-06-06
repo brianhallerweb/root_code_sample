@@ -10,6 +10,8 @@ The second command is Trip, which will record a trip attributed to a driver. The
 
 `Trip Dan 07:15 07:45 17.3`
 
+The app will generate a report containing each driver with total miles driven and average speed, sorted by most miles driven to least.
+
 Example input:
 
 ```
