@@ -14,10 +14,6 @@ describe("parseInputFile", () => {
     }
   });
 
-  it("should be a function", () => {
-    expect(typeof parseInputFile).toBe("function");
-  });
-
   it("should push driver commands to the driverCommands array", () => {
     const commandString = "Driver John";
     parseInputFile(commandString);

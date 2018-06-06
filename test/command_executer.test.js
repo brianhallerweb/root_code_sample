@@ -19,10 +19,6 @@ describe("executeDriverCommands", () => {
     }
   });
 
-  it("should be a function", () => {
-    expect(typeof executeDriverCommands).toBe("function");
-  });
-
   it("should put new Driver instances with name properties into the database", () => {
     const commandString = "Driver A\nDriver B\n Driver C";
     parseInputFile(commandString);

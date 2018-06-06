@@ -27,10 +27,6 @@ describe("logOutput", () => {
     }
   });
 
-  it("should be a function", () => {
-    expect(typeof logOutput).toEqual("function");
-  });
-
   it("should return the correct output string", () => {
     parseInputFile(
       "Driver Dan\nDriver John\nTrip Dan 07:15 07:45 17.3\nTrip John 07:15 07:45 20.3"
