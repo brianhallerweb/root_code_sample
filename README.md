@@ -35,7 +35,7 @@ Start the app with:
 
 `$ node app.js ./inputFile.txt`
 
-Tests are written in Jest:
+Unit tests are written in Jest:
 
 `$ npm test`
 
