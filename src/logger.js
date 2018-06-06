@@ -1,3 +1,7 @@
+// The database is sorted by total miles driven, from most to least.
+// A report is then generated that includes each driver's name, total
+// miles driven and avgerage mph.
+
 const database = require("../database/database");
 
 const sortedDatabase = [];
