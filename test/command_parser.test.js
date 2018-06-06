@@ -1,7 +1,8 @@
-const commandParser = require("../src/command_parser");
-const parseInputFile = commandParser.parseInputFile;
-const driverCommands = commandParser.driverCommands;
-const tripCommands = commandParser.tripCommands;
+const {
+  parseInputFile,
+  driverCommands,
+  tripCommands
+} = require("../src/command_parser");
 
 describe("parseInputFile", () => {
   afterEach(() => {

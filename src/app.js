@@ -1,13 +1,15 @@
 const fs = require("fs");
 
-const commandParser = require("./command_parser");
-const parseInputFile = commandParser.parseInputFile;
-const driverCommands = commandParser.driverCommands;
-const tripCommands = commandParser.tripCommands;
+const {
+  parseInputFile,
+  driverCommands,
+  tripCommands
+} = require("./command_parser");
 
-const commandExecuter = require("./command_executer");
-const executeDriverCommands = commandExecuter.executeDriverCommands;
-const executeTripCommands = commandExecuter.executeTripCommands;
+const {
+  executeDriverCommands,
+  executeTripCommands
+} = require("./command_executer");
 
 const database = require("../database/database");
 

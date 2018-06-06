@@ -6,9 +6,7 @@
 // 1. trip data (total time and total miles) are added to
 //    each driver object in the database
 
-const commandParser = require("./command_parser");
-const driverCommands = commandParser.driverCommands;
-const tripCommands = commandParser.tripCommands;
+const { driverCommands, tripCommands } = require("./command_parser");
 
 const database = require("../database/database");
 
