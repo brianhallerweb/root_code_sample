@@ -33,7 +33,7 @@ Bob: 0 miles
 
 Start the app with:
 
-`$ node app.js ./inputFile.txt`
+`$ node src/app.js ./inputFile.txt`
 
 Unit tests are written in Jest:
 
