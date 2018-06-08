@@ -23,5 +23,3 @@ function run() {
 }
 
 run();
-
-//it works but I'm not sure it it will accumulate nuew trips properly

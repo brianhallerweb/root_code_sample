@@ -10,8 +10,8 @@ const store = createStore((state = {}, action) => {
       return Object.assign({}, state, {
         [action.name]: {
           name: action.name,
-          miles: action.miles,
-          time: action.time
+          miles: state[action.name].miles + action.miles,
+          time: state[action.name].time + action.time
         }
       });
     default:

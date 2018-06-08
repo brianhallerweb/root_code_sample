@@ -41,6 +41,6 @@ Unit tests are written in Jest:
 
 ---
 
-#### App Diagram
+#### App Diagram (original_approach)
 
 ![Alt text](/app_diagram.jpg)
