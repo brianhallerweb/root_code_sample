@@ -1,4 +1,4 @@
-const strOutput = require("../src/logger");
+const strOutput = require("../original_approach/logger");
 
 const database1 = {
   Dan: { name: "Dan", time: 0.8333333333333333, miles: 39.1 },

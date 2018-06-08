@@ -1,4 +1,4 @@
-const createDrivingRecords = require("../src/trip_recorder");
+const createDrivingRecords = require("../functional_like_approach/trip_recorder");
 
 let database = {};
 afterEach(() => {

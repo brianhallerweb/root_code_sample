@@ -1,8 +1,7 @@
 const fs = require("fs");
-const parseCommands = require("./command_parser");
-const executeCommands = require("./command_executer");
-const logOutput = require("./logger");
-const database = require("../database/database");
+const store = require("./store/store");
+const strOutput = require("./logger");
+const createDrivingRecords = require("./trip_recorder");
 
 function run() {
   if (process.argv.length !== 3) {
@@ -17,11 +16,12 @@ function run() {
       throw Error(err);
     }
 
-    const commands = parseCommands(data);
-    executeCommands(commands, database);
-    const drivingHistoryReport = logOutput(database);
+    createDrivingRecords(data);
+    const drivingHistoryReport = strOutput(store);
     console.log(drivingHistoryReport);
   });
 }
 
 run();
+
+//it works but I'm not sure it it will accumulate nuew trips properly
