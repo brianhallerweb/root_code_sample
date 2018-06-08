@@ -1,7 +1,8 @@
 const fs = require("fs");
-const createDrivingRecords = require("./trip_recorder");
+const parseCommands = require("./command_parser");
+const executeCommands = require("./command_executer");
 const database = require("../database/database");
-const strOutput = require("./logger");
+const logOutput = require("./logger");
 
 function run() {
   if (process.argv.length !== 3) {
@@ -15,8 +16,10 @@ function run() {
     if (err) {
       throw Error(err);
     }
-    createDrivingRecords(data, database);
-    const drivingHistoryReport = strOutput(database);
+
+    const commands = parseCommands(data);
+    executeCommands(commands, database);
+    const drivingHistoryReport = logOutput(database);
     console.log(drivingHistoryReport);
   });
 }

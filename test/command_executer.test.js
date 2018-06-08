@@ -1,69 +1,37 @@
-const {
-  parseInputFile,
-  driverCommands,
-  tripCommands
-} = require("../src/command_parser");
+const executeCommands = require("../original_approach/command_executer");
 
-const {
-  Driver,
-  executeDriverCommands,
-  executeTripCommands
-} = require("../src/command_executer");
-
-const database = require("../database/database");
-
-describe("executeDriverCommands", () => {
-  afterEach(() => {
-    for (key in database) {
-      delete database.key;
-    }
-  });
-
-  it("should put new Driver instances with name properties into the database", () => {
-    const commandString = "Driver A\nDriver B\n Driver C";
-    parseInputFile(commandString);
-    executeDriverCommands();
-    expect(database.A).toBeInstanceOf(Driver);
-    expect(database.A.name).toBe("A");
-    expect(database.B).toBeInstanceOf(Driver);
-    expect(database.B.name).toBe("B");
-    expect(database.C).toBeInstanceOf(Driver);
-    expect(database.C.name).toBe("C");
-  });
+let database = {};
+afterEach(() => {
+  database = {};
 });
 
-describe("executeTripCommands", () => {
-  afterEach(() => {
-    for (key in database) {
-      delete database.key;
-    }
+describe("executeCommands", () => {
+  it("should put new drivers into the database with a name property", () => {
+    const commands = {
+      driverCommands: ["Driver A", "Driver B", "Driver C"],
+      tripCommands: []
+    };
+    executeCommands(commands, database);
+    expect(database.A.name).toBe("A");
+    expect(database.B.name).toBe("B");
+    expect(database.C.name).toBe("C");
   });
 
-  it("should be a function", () => {
-    expect(typeof executeTripCommands).toBe("function");
+  it("should record the number of miles and time for a driver", () => {
+    const commands = {
+      driverCommands: ["Driver Dan"],
+      tripCommands: ["Trip Dan 07:15 07:45 17.3"]
+    };
+    executeCommands(commands, database);
+    expect(database.Dan).toEqual({ name: "Dan", time: 0.5, miles: 17.3 });
   });
 
   it("should accumulate the total number of miles and time per driver", () => {
-    parseInputFile("Driver Dan\nTrip Dan 07:15 07:45 17.3");
-    executeDriverCommands();
-    executeTripCommands();
-    expect(database.Dan).toEqual({
-      name: "Dan",
-      time: 0.5,
-      miles: 17.3
-    });
-    executeTripCommands();
+    const commands = {
+      driverCommands: ["Driver Dan"],
+      tripCommands: ["Trip Dan 07:15 07:45 17.3", "Trip Dan 07:15 07:45 17.3"]
+    };
+    executeCommands(commands, database);
     expect(database.Dan).toEqual({ name: "Dan", time: 1, miles: 34.6 });
-  });
-
-  it("should accumulate the total number of miles and time per driver", () => {
-    parseInputFile("Driver Linda\nTrip Linda 05:15 07:39 27.8");
-    executeDriverCommands();
-    executeTripCommands();
-    expect(database.Linda).toEqual({
-      name: "Linda",
-      time: 2.4,
-      miles: 27.8
-    });
   });
 });
