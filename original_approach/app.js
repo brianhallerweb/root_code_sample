@@ -12,12 +12,12 @@ function run() {
   }
   const inputFilePath = process.argv[2];
 
-  fs.readFile(inputFilePath, "utf8", (err, data) => {
+  fs.readFile(inputFilePath, "utf8", (err, drivingData) => {
     if (err) {
       throw Error(err);
     }
 
-    const commands = parseCommands(data);
+    const commands = parseCommands(drivingData);
     executeCommands(commands, database);
     const drivingHistoryReport = logOutput(database);
     console.log(drivingHistoryReport);

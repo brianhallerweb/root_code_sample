@@ -11,12 +11,12 @@ function run() {
   }
   const inputFilePath = process.argv[2];
 
-  fs.readFile(inputFilePath, "utf8", (err, data) => {
+  fs.readFile(inputFilePath, "utf8", (err, drivingData) => {
     if (err) {
       throw Error(err);
     }
 
-    createDrivingRecords(data);
+    createDrivingRecords(drivingData);
     const drivingHistoryReport = strOutput(store);
     console.log(drivingHistoryReport);
   });
