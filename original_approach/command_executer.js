@@ -31,7 +31,7 @@ function executeTripCommands(tripCommandsArr, db) {
 
 function calculateTime(start, end) {
   const startTimeArr = start.split(":");
-  const startMinutes = parseInt(startTimeArr[0]) * 60 + Number(startTimeArr[1]);
+  const startMinutes = Number(startTimeArr[0]) * 60 + Number(startTimeArr[1]);
   const endTimeArr = end.split(":");
   const endMinutes = Number(endTimeArr[0]) * 60 + Number(endTimeArr[1]);
   return (endMinutes - startMinutes) / 60;
