@@ -1,7 +1,7 @@
 const fs = require("fs");
 const createDrivingRecords = require("./trip_recorder");
 const database = require("../database/database");
-const strOutput = require("./logger");
+const createOutput = require("./logger");
 
 function run() {
   if (process.argv.length !== 3) {
@@ -16,7 +16,7 @@ function run() {
       throw Error(err);
     }
     createDrivingRecords(drivingData, database);
-    const drivingHistoryReport = strOutput(database);
+    const drivingHistoryReport = createOutput(database);
     console.log(drivingHistoryReport);
   });
 }

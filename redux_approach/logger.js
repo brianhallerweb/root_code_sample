@@ -8,7 +8,7 @@ function mph(miles, time) {
   return Math.round(miles / time);
 }
 
-function strOutput(state) {
+function createOutput(state) {
   const sortedDatabase = sortStore(state);
   const outputArr = [];
   sortedDatabase.forEach(driver => {
@@ -25,4 +25,4 @@ function strOutput(state) {
   return `\nDriving history report:\n\n${outputArr.join("")}`;
 }
 
-module.exports = strOutput;
+module.exports = createOutput;

@@ -1,6 +1,6 @@
 const fs = require("fs");
 const store = require("./store/store");
-const strOutput = require("./logger");
+const createOutput = require("./logger");
 const createDrivingRecords = require("./trip_recorder");
 
 function run() {
@@ -17,7 +17,7 @@ function run() {
     }
 
     createDrivingRecords(drivingData);
-    const drivingHistoryReport = strOutput(store);
+    const drivingHistoryReport = createOutput(store);
     console.log(drivingHistoryReport);
   });
 }
