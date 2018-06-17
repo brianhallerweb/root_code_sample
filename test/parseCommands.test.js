@@ -1,4 +1,4 @@
-const parseCommands = require("../original_approach/command_parser");
+const parseCommands = require("../original_approach/parseCommands");
 
 describe("parseCommands", () => {
   it("should return an array of driver commands", () => {

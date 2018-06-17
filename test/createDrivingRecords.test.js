@@ -1,4 +1,4 @@
-const createDrivingRecords = require("../redux_approach/trip_recorder");
+const createDrivingRecords = require("../redux_approach/createDrivingRecords");
 const store = require("../redux_approach/store/store");
 
 describe("createDrivingRecords", () => {

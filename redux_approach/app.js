@@ -1,7 +1,7 @@
 const fs = require("fs");
 const store = require("./store/store");
-const createOutput = require("./logger");
-const createDrivingRecords = require("./trip_recorder");
+const createOutput = require("./createOutput");
+const createDrivingRecords = require("./createDrivingRecords");
 
 function run() {
   if (process.argv.length !== 3) {

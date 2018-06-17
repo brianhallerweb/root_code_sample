@@ -12,11 +12,12 @@ function parseDistance(str) {
 function parseTime(str) {
   const start = str.trim().split(" ")[2];
   const end = str.trim().split(" ")[3];
-  const startTimeArr = start.split(":");
-  const startMinutes = Number(startTimeArr[0]) * 60 + Number(startTimeArr[1]);
-  const endTimeArr = end.split(":");
-  const endMinutes = Number(endTimeArr[0]) * 60 + Number(endTimeArr[1]);
-  return (endMinutes - startMinutes) / 60;
+  const [startHours, startMinutes] = start.split(":");
+  const [endHours, endMinutes] = end.split(":");
+
+  startTime = Number(startHours) * 60 + Number(startMinutes);
+  endTime = Number(endHours) * 60 + Number(endMinutes);
+  return (endTime - startTime) / 60;
 }
 
 function createDrivingRecords(input) {

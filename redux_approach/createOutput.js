@@ -9,17 +9,14 @@ function mph(miles, time) {
 }
 
 function createOutput(state) {
-  const sortedDatabase = sortStore(state);
-  const outputArr = [];
-  sortedDatabase.forEach(driver => {
+  const sortedState = sortStore(state);
+  const outputArr = sortedState.map(driver => {
     if (!driver.miles) {
-      outputArr.push(`${driver.name}: 0 miles\n`);
+      return `${driver.name}: 0 miles\n`;
     } else {
-      outputArr.push(
-        `${driver.name}: ${Math.round(driver.miles)} miles @ ${Math.round(
-          mph(driver.miles, driver.time)
-        )} mph\n`
-      );
+      return `${driver.name}: ${Math.round(driver.miles)} miles @ ${Math.round(
+        mph(driver.miles, driver.time)
+      )} mph\n`;
     }
   });
   return `\nDriving history report:\n\n${outputArr.join("")}`;

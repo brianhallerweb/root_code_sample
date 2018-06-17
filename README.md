@@ -33,7 +33,7 @@ Bob: 0 miles
 
 Run the app with:
 
-`$ node src/app.js ./inputFile.txt`
+`$ node src/app.js ./inputfile.txt`
 
 Unit tests are written in Jest:
 
@@ -44,3 +44,9 @@ Unit tests are written in Jest:
 #### App Diagram (original_approach)
 
 ![Alt text](/app_diagram.jpg)
+
+---
+
+### Redux Approach
+
+For the sake of curiosity, and a deeper understanding of modern state mangement, I rewrote the app with redux. That code is found in the redux_approach folder. It generates an equivalent output to my original approach.

@@ -1,13 +1,13 @@
 const fs = require("fs");
-const parseCommands = require("./command_parser");
-const executeCommands = require("./command_executer");
-const logOutput = require("./logger");
-const database = require("../database/database");
+const parseCommands = require("./parseCommands");
+const executeCommands = require("./executeCommands");
+const createOutput = require("./createOutput");
+const drivingRecords = require("./drivingRecords");
 
 function run() {
   if (process.argv.length !== 3) {
     throw Error(
-      "App must be started with a command in this format: $ node src/app.js ./inputFile.txt"
+      "App must be started with a command in this format: $ node src/app.js ./inputfile.txt"
     );
   }
   const inputFilePath = process.argv[2];
@@ -18,8 +18,8 @@ function run() {
     }
 
     const commands = parseCommands(drivingData);
-    executeCommands(commands, database);
-    const drivingHistoryReport = logOutput(database);
+    executeCommands(commands, drivingRecords);
+    const drivingHistoryReport = createOutput(drivingRecords);
     console.log(drivingHistoryReport);
   });
 }
