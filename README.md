@@ -47,6 +47,6 @@ Unit tests are written in Jest:
 
 ---
 
-### Redux Approach
+##### Redux Approach
 
 For the sake of curiosity, and a deeper understanding of modern state mangement, I rewrote the app with redux. That code is found in the redux_approach folder. It generates an equivalent output to my original approach.
