@@ -7,9 +7,8 @@ namespace RootCodeSample
   {
     static void Main(string[] args)
     {
-      var logs = System.IO.File.ReadAllLines(@"/Users/brianhaller/Documents/c#_projects/RootCodeSample/input.txt");
-      var logParser = new LogParser(logs);
-      logParser.RegisterRecordKeeper(new RootRecordKeeper());
+      var logs = System.IO.File.ReadAllLines(@"/Users/brianhaller/Documents/javascript_projects/root_code_sample/CSharpSolution/input.txt");
+      var logParser = new LogParser(logs, new RootRecordKeeper());
       logParser.Parse();
       logParser.RecordKeeper.LogOutput();
     }

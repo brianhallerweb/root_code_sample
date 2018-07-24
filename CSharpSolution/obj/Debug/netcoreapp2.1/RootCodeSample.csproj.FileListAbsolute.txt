@@ -9,3 +9,14 @@
 /Users/brianhaller/Documents/c#_projects/RootCodeSample/obj/Debug/netcoreapp2.1/RootCodeSample.AssemblyInfo.cs
 /Users/brianhaller/Documents/c#_projects/RootCodeSample/obj/Debug/netcoreapp2.1/RootCodeSample.dll
 /Users/brianhaller/Documents/c#_projects/RootCodeSample/obj/Debug/netcoreapp2.1/RootCodeSample.pdb
+/Users/brianhaller/Documents/javascript_projects/root_code_sample/CSharpSolution/obj/Debug/netcoreapp2.1/RootCodeSample.csprojAssemblyReference.cache
+/Users/brianhaller/Documents/javascript_projects/root_code_sample/CSharpSolution/obj/Debug/netcoreapp2.1/RootCodeSample.csproj.CoreCompileInputs.cache
+/Users/brianhaller/Documents/javascript_projects/root_code_sample/CSharpSolution/obj/Debug/netcoreapp2.1/RootCodeSample.AssemblyInfoInputs.cache
+/Users/brianhaller/Documents/javascript_projects/root_code_sample/CSharpSolution/obj/Debug/netcoreapp2.1/RootCodeSample.AssemblyInfo.cs
+/Users/brianhaller/Documents/javascript_projects/root_code_sample/CSharpSolution/obj/Debug/netcoreapp2.1/RootCodeSample.dll
+/Users/brianhaller/Documents/javascript_projects/root_code_sample/CSharpSolution/obj/Debug/netcoreapp2.1/RootCodeSample.pdb
+/Users/brianhaller/Documents/javascript_projects/root_code_sample/CSharpSolution/bin/Debug/netcoreapp2.1/RootCodeSample.deps.json
+/Users/brianhaller/Documents/javascript_projects/root_code_sample/CSharpSolution/bin/Debug/netcoreapp2.1/RootCodeSample.runtimeconfig.json
+/Users/brianhaller/Documents/javascript_projects/root_code_sample/CSharpSolution/bin/Debug/netcoreapp2.1/RootCodeSample.runtimeconfig.dev.json
+/Users/brianhaller/Documents/javascript_projects/root_code_sample/CSharpSolution/bin/Debug/netcoreapp2.1/RootCodeSample.dll
+/Users/brianhaller/Documents/javascript_projects/root_code_sample/CSharpSolution/bin/Debug/netcoreapp2.1/RootCodeSample.pdb

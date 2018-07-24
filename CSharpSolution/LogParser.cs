@@ -5,15 +5,14 @@ namespace RootCodeSample
  class LogParser
   {
     public string[] Logs { get; set; }
-    public LogParser(string[] logs)
+    public IRecordKeeper RecordKeeper { get; set; }
+    public LogParser(string[] logs, IRecordKeeper recordKeeper)
     {
       Logs = logs;
-    }
-    public IRecordKeeper RecordKeeper { get; set; }
-    public void RegisterRecordKeeper(IRecordKeeper recordKeeper)
-    {
       RecordKeeper = recordKeeper;
     }
+  
+
     public void Parse()
     {
       foreach (var log in Logs)

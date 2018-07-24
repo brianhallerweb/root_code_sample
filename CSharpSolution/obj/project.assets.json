@@ -687,11 +687,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/brianhaller/Documents/c#_projects/RootCodeSample/RootCodeSample.csproj",
+      "projectUniqueName": "/Users/brianhaller/Documents/javascript_projects/root_code_sample/CSharpSolution/RootCodeSample.csproj",
       "projectName": "RootCodeSample",
-      "projectPath": "/Users/brianhaller/Documents/c#_projects/RootCodeSample/RootCodeSample.csproj",
+      "projectPath": "/Users/brianhaller/Documents/javascript_projects/root_code_sample/CSharpSolution/RootCodeSample.csproj",
       "packagesPath": "/Users/brianhaller/.nuget/packages/",
-      "outputPath": "/Users/brianhaller/Documents/c#_projects/RootCodeSample/obj/",
+      "outputPath": "/Users/brianhaller/Documents/javascript_projects/root_code_sample/CSharpSolution/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
